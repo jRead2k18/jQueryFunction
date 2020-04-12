@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Trial</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //$('.secret').hide();
+        });
+    </script>
+</head>
+<body>
+    <p class="secret">This is secret #1</p>
+    <button id="hide">Hide Secrets</button> <!-- hide -->
+    <button id="show">Show Secrets</button> <!-- show -->
+    <button id="toggle">Toggle Secrets</button> <!-- toggle -->
+    <button id="slideDown">Slide Down Secrets</button> <!-- slideDown -->
+    <button id="slideUp">Slide Up Secrets</button> <!-- slideUp -->
+    <button id="slideToggle">Slide Toggle Secrets</button> <!-- slideToggle -->
+    <button id="fadeIn">Fade In Secrets</button> <!-- fadeIn -->
+    <button id="fadeOut">Fade Out Secrets</button> <!-- fadeOut -->
+    <button id="addClass">Add Class to Secrets</button> <!-- addClass -->
+    <button id="removeClass">Remove 'red' Class from Secrets</button> <!-- removeClass -->
+    <button id="before">Put a link before Secrets</button> <!-- before -->
+    <button id="after">Put a link after Secrets</button> <!-- after -->
+    <button id="append">Append "x" after Secrets</button> <!-- append -->
+    <button id="attr">Alert The Attr</button> <!-- attr -->
+    <button id="val">Alert The Truth</button> <!-- val -->
+    <button id="text">Alert The Text</button> <!-- text -->
+     
+    <script type="text/javascript">
+    //hide test
+        $('#hide').click(function(){
+            $('.secret').hide();
+        });
+    //show test
+        $('#show').click(function(){
+            $('.secret').show();
+        });
+    //toggle test
+        $('#toggle').click(function(){
+            $('.secret').toggle();
+        });
+    //slideDown test
+    $('#slideDown').click(function(){
+            $('.secret').slideDown();
+        });
+    //slideUp test
+    $('#slideUp').click(function(){
+            $('.secret').slideUp();
+        });
+    //slideToggle test
+    $('#slideToggle').click(function(){
+            $('.secret').slideToggle();
+        });
+    //fadeIn test
+    $('#fadeIn').click(function(){
+            $('.secret').fadeIn();
+        });
+    //fadeOut test
+    $('#fadeOut').click(function(){
+            $('.secret').fadeOut();
+        });
+    //addClass test
+    $('#addClass').click(function(){
+            $('.secret').addClass('red');
+        });
+    //removeClass test
+    $('#removeClass').click(function(){
+            $('.secret').removeClass('red');
+        });
+    //before test
+    $('#before').click(function(){
+            $('.secret').before('<a href="#">Link to Nothing</a>');
+        });
+    //after test
+    $('#after').click(function(){
+            $('.secret').after('<a href="#">Link to Nothing</a>');
+        });
+    //append test
+    $('#append').click(function(){
+            $('.secret').append('x');
+        });
+    //html test
+    $('#htmlTest').click(function(){
+            $(this).html('I have been changed :O');
+        });
+    //attr test
+    $('#attr').click(function(){
+            alert($('.secret').attr('class'));
+        });
+    </script>
+</body>
+</html>
